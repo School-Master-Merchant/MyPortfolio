@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name= "viewport" content="width=device-width initial-scale=1">
+        <title>Contact</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="nav.css">
+        <link rel="stylesheet" href="contact.css">
+        
+    </head>
+
+
+  <body>
+    <div class=".Contact"></div>
+
+     <div class="header"><h1>Contact</h1></div>
+
+<!-- (A) MENU WRAPPER -->
+<nav id="hamnavigation">
+  <!-- (B) THE HAMBURGER -->
+  <label for="hamburger">&#9776;</label>
+  <input type="checkbox" id="hamburger"/>
+
+        <!--Navigation Menu-->
+            
+        <div class="Navigation">
+          <ul class="menu">
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="about.html">About</a> </li>
+                <li>
+                  <a href="Project.html">Projects</a>
+                  <ul class="dropdown">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                  </ul>
+                </li>
+               
+                <li><a href="reflection.html">Reflection</a></li>
+                <li><a href="contact.html">Contact</a></li>
+          </ul> 
+       </div>
+</nav>
+
+<div id="contactContainer">
+    <div class="header--sub-header">
+      <h5>
+        Please enter the information requested below to contact me via email.
+        Thank you in advance for your message.
+      </h5>
+    </div>
+
+    <form>
+      
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname"><br>
+
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname"><br>
+
+      <label for="email">Email Address:</label><br>
+      <input type="email" name="email"><br>
+
+      <label for="email">Message:</label><br>
+      <textarea rows="4" cols="50" name="comment" form="usrform"></textarea><br>
+
+      <button type="reset" value="reset">Reset</button>
+      <button type="submit" value="Submit">Submit</button>
+      
+    </form> 
+</div>
+
+<footer>
+  <div>
+      <p>Andrea Rechtfertig</p>
+      <img src="images/email icon.png" alt="email icon" id="email">
+      <a href="califia_10@yahoo.com"> califia_10@yahoo.com</a>
+      <img src="images/smartphone.png" alt="phone icon" id="phone">
+      <p>1+888-888-8888; © Copyright 2022</p>
+  </div>
+</footer>
+
+</body>
+</html>
