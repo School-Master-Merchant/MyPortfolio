@@ -63,12 +63,16 @@
    text-decoration: none;
    text-align: center;
  }
- .menu a:hover { background: #FFE4C4; }
+ .menu a:hover { background: #FFE4C4; color: #999999;}
  
  /* (C) HIDE HAMBURGER */
  #hamnavigation label, #hamburger { display: none; }
  
  /* [ON SMALL SCREENS] */
+
+ .Navigation{
+  display: block;
+  }
  @media screen and (max-width: 768px){
    /* (A) BREAK INTO VERTICAL MENU */
    .menu a {
@@ -83,16 +87,30 @@
    /* (B) SHOW HAMBURGER ICON */
    #hamnavigation label {
      display: inline-block;
-     color:#999999;
-     background: #a0208b;
+     color:white;
+     background: #999999;
      font-style: normal;
      font-size: 1.2em;
      padding: 10px;
+     width: 100%;
+     text-align: center;
    }
  
    /* (C) TOGGLE SHOW/HIDE MENU */
-   .menu { display: none; }
+   .Navigation{
+     display: none;
+   }
+   .menu {
+      display: flex!important;
+    }
+
+  
+
    #hamnavigation input:checked ~ .menu { display: block; }
+
+    .menu a {
+      border-top: none;
+    }
  }
  
  /* [DOES NOT MATTER] */
