@@ -5,13 +5,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Yantramanav:wght@100&display=swap" rel="stylesheet">
-    
+    <link rel="icon" type="favicon solid.ico" href="favicon solid.ico">
     <title>About</title>
      
      <link rel="stylesheet" href="nav.css">
      <link rel="stylesheet" href="about.css">
      <link rel="stylesheet" href="style.css">
      <meta name= "viewport" content="width=device-width initial-scale=1">
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <script>
+      $(document).ready(function(){
+         $("#hamburgerIcon").click(function(){
+           $(".Navigation").toggle(".Navigation .menu");
+         });
+       });
+    </script>
            
   </head>
 
@@ -29,19 +38,19 @@
 <!-- (A) MENU WRAPPER -->
 <nav id="hamnavigation">
     <!-- (B) THE HAMBURGER -->
-    <label for="hamburger">&#9776;</label>
+    <label for="hamburger"  id="hamburgerIcon">&#9776;</label>
     <input type="checkbox" id="hamburger"/>
     <!--Navigation Menu-->
     <div class="Navigation">
-      <ul class="menu">
+      <ul class="menu"  id="mobileMenu">
             <li><a href="index.html">Home</a> </li>
             <li><a href="about.html">About</a> </li>
             <li>
               <a href="Project.html">Projects</a>
               <ul class="dropdown">
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
+                <li><a href="#sectionOne">Spanish Lesson</a></li>
+                <li><a href="#sectionTwo">Music Game</a></li>
+                <li><a href="#sectionThree">Reading Lesson</a></li>
               </ul>
             </li>
            
@@ -103,7 +112,7 @@ I am a music teacher, and I have used plenty of software experience, but I have 
     <div>
         <p>Andrea Rechtfertig</p>
         <img src="images/email icon.png" alt="email icon" id="email">
-        <a href="califia_10@yahoo.com"> califia_10@yahoo.com</a>
+        <a href="mailto:califia_10@yahoo.com">califia_10@yahoo.com</a>
         <img src="images/smartphone.png" alt="phone icon" id="phone">
         <p>1+888-888-8888; © Copyright 2022</p>
     </div>
