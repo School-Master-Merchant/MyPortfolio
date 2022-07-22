@@ -16,3 +16,16 @@ textarea {
 button {
     margin: 10px 6px 0 0;
 }
+
+  @media screen and (max-width: 769px){
+    #contactContainer {
+         padding: 50px;
+    }
+    input {
+        width: 80%;
+    }
+    textarea {
+       width: 80%;
+       height: 100px;
+    }
+  }
