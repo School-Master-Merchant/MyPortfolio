@@ -7,28 +7,42 @@
          <meta name= "viewport" content="width=device-width initial-scale=1">
          <link rel="shortcut icon" type="images/email.ico" href="images/email.ico">
          <link rel="shortcut icon" type="images/phone.ico" href="images/phone.ico">
+         <link rel="icon" type="favicon solid.ico" href="favicon solid.ico">
          <link rel="stylesheet" href="style.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+         <script>
+           $(document).ready(function(){
+              $("#hamburgerIcon").click(function(){
+                $(".Navigation").toggle(".Navigation .menu");
+              });
+            });
+         </script>
     </head>
 
 
 <body class="body">
+  <div class="header">
+    <h1>Welcome to School-Master-Merchant</h1>
+  </div>
 
-  <nav id="hamnavigation">
+  <nav id="hamnavigation" >
     <!-- (B) THE HAMBURGER -->
-    <label for="hamburger">&#9776;</label>
+    <label for="hamburger" id="hamburgerIcon">&#9776;</label>
     <input type="checkbox" id="hamburger"/>
+
+
 
     <!--Navigation Menu-->
     <div class="Navigation">
-        <ul class="menu">
+        <ul class="menu" id="mobileMenu">
               <li><a href="index.html">Home</a> </li>
               <li><a href="about.html">About</a> </li>
               <li>
                 <a href="Project.html">Projects</a>
                 <ul class="dropdown">
-                  <li><a href="#">Link 1</a></li>
-                  <li><a href="#">Link 2</a></li>
-                  <li><a href="#">Link 3</a></li>
+                  <li><a href="#sectionOne">Spanish Lesson</a></li>
+                  <li><a href="#sectionTwo">Music Game</a></li>
+                  <li><a href="#sectionThree">Reading Lesson</a></li>
                 </ul>
               </li>
              
@@ -38,7 +52,8 @@
     </div>
     
   </nav>
- <div class="mainContainer">
+  
+<div class="mainContainer">
 
 
 
@@ -54,9 +69,10 @@
 Author: Andrea Rechtfertig 
 Date: 6/17/2022   -->
 <div class="contentContainer">
-    <div class="header">
-      <h3>Welcome to School-Master-Merchant</h3>
-    </div>
+    <div class="head img">
+      <img src="images/sailing ship.jpg">
+      </div>
+    
 
     <div class="content">
       <p>The inspiration for the name of my website came from an ancient novel that was discovered in the 16th century by a Hungarian merchant. The novel revealed an island paradise where an Amazonian queen, called Queen Califia, ruled. This story ignited the great quest by the conquistadores who believed they might find a nation of riches and beautiful women.</p> 
@@ -77,7 +93,7 @@ Date: 6/17/2022   -->
       <div>
           <p>Andrea Rechtfertig</p>
           <img src="images/email icon.png" alt="email icon" id="email">
-          <a href="califia_10@yahoo.com"> califia_10@yahoo.com</a>
+          <a href="mailto:califia_10@yahoo.com"> califia_10@yahoo.com</a>
           <img src="images/smartphone.png" alt="phone icon" id="phone">
           <p>1+888-888-8888; © Copyright 2022</p>
       </div>
